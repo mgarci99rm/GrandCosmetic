@@ -14,17 +14,22 @@ Static demo site for Grand Cosmetic Clinic (Studio City, CA), built as a concept
   - Reduced overall stock-photo usage — the design now leans on typography, whitespace and the gold/black palette rather than filling every section with photos, since the client felt earlier photos looked "too stock."
   - Team section keeps neutral initials avatars (no photos) until the clinic provides real, correctly-labeled photos of Dr. Dehkordi and Tricia.
 
-## How to update your local project
+## Set up as a brand-new repository (recommended if you got lost mixing folders before)
 
-1. Replace `index.html`, and the entire `css/` and `js/` folders in your VS Code project with the ones in this zip.
-2. **Keep your existing `assets/logo.png`** — it isn't included in this zip since your project already has it from before. If for any reason it's missing, re-add the clinic's logo file at `assets/logo.png` (square image works best).
-3. In the VS Code terminal:
+This zip is a **complete, ready-to-go project** — it already includes its own Git history, so you don't need to copy/paste files into an existing folder at all.
+
+1. **Create a new empty repository on GitHub**: go to github.com → the **+** icon top-right → "New repository". Name it (e.g. `GrandCosmetic2`), leave it **empty** (do NOT check "Add a README"), click **Create repository**. GitHub will show you a page with a URL like `https://github.com/mgarci99rm/GrandCosmetic2.git` — copy it.
+2. **Extract this zip** anywhere on your computer (right-click → "Extraer todo").
+3. **Open the extracted `grand-cosmetic-clinic` folder in VS Code**: File → Open Folder.
+4. Open the terminal in VS Code (Terminal → New Terminal) and run these two lines, one at a time (replace the URL with the one you copied in step 1):
    ```
-   git add .
-   git commit -m "Rebuild site with improved photography"
-   git push
+   git remote add origin https://github.com/mgarci99rm/GrandCosmetic2.git
+   git push -u origin main
    ```
-4. Give it a minute, then refresh sophiawebdraft.es (hard refresh: Ctrl+F5) to see the changes live.
+5. Refresh your GitHub repo page — all the files should be there.
+6. In GitHub → **Settings → Pages**, set it to deploy from branch `main` / root, and add your custom domain `sophiawebdraft.es` again (same as you did the first time).
+
+**Note on the logo:** since this is a completely fresh project, I couldn't carry over your real clinic logo file — I generated a placeholder gold/black "GC" monogram at `assets/logo.png` so the site isn't broken. If you still have the real logo image saved somewhere on your computer, just drag it into the `assets` folder (overwriting the placeholder, same filename `logo.png`) and push again. If not, just re-attach it to me and I'll swap it in.
 
 ## Pendiente antes de presentarlo como oficial (Spanish notes for the client-facing punch list)
 
