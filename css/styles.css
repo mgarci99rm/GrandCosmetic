@@ -70,31 +70,6 @@ a{color:inherit;text-decoration:none;}
 .btn-outline-light{background:transparent;color:var(--cream);border-color:var(--gold-light);}
 .btn-outline-light:hover{background:var(--gold-light);color:var(--black);}
 
-/* ===== Ticker ===== */
-.ticker{
-  background:var(--black);
-  color:var(--gold-light);
-  overflow:hidden;
-  white-space:nowrap;
-  border-bottom:1px solid var(--line-dark);
-  position:sticky;top:0;z-index:60;
-}
-.ticker-track{
-  display:inline-flex;
-  gap:.6rem;
-  padding:.5rem 0;
-  font-family:var(--font-mono);
-  font-size:.7rem;
-  letter-spacing:.14em;
-  text-transform:uppercase;
-  animation:ticker-scroll 28s linear infinite;
-}
-.ticker-track .dot{color:var(--gold-deep);padding:0 .2rem;}
-@keyframes ticker-scroll{
-  0%{transform:translateX(0);}
-  100%{transform:translateX(-50%);}
-}
-
 /* ===== Scroll reveal ===== */
 /* Visible by default; JS opts elements into the hidden starting state
    only once it has confirmed it's running, so a slow/blocked script
@@ -113,34 +88,23 @@ html.js-reveal .reveal{
   transform:translateY(0) !important;
 }
 
-/* ===== Header ===== */
+/* ===== Header (always dark, flush with the dark hero below it) ===== */
 .site-header{
-  position:sticky;top:33px;z-index:50;
-  background:rgba(251,248,242,.94);
+  position:sticky;top:0;z-index:50;
+  background:rgba(15,13,10,.92);
   backdrop-filter:blur(6px);
-  border-bottom:1px solid var(--line);
+  border-bottom:1px solid var(--line-dark);
 }
 .header-inner{
   max-width:1180px;margin:0 auto;padding:0 24px;
-  height:76px;display:flex;align-items:center;justify-content:space-between;gap:1.5rem;
+  height:92px;display:flex;align-items:center;justify-content:space-between;gap:1.5rem;
 }
 .brand{display:flex;align-items:center;gap:.6rem;flex-shrink:0;}
-.brand-mark{
-  width:38px;height:38px;border-radius:50%;
-  background:var(--black);color:var(--gold);
-  display:flex;align-items:center;justify-content:center;
-  font-family:var(--font-display);font-size:1rem;font-weight:600;
-}
-.brand-word{
-  font-family:var(--font-display);
-  font-size:1.1rem;letter-spacing:.02em;
-  display:none;
-}
-@media(min-width:560px){.brand-word{display:block;}}
+.brand-logo{height:68px;width:68px;object-fit:contain;display:block;}
 
 .main-nav{display:none;gap:2rem;font-family:var(--font-mono);font-size:.78rem;letter-spacing:.06em;text-transform:uppercase;}
-.main-nav a{opacity:.85;transition:opacity .2s;}
-.main-nav a:hover{opacity:1;color:var(--gold-deep);}
+.main-nav a{color:var(--cream-dim);opacity:.9;transition:opacity .2s, color .2s;}
+.main-nav a:hover{opacity:1;color:var(--gold-light);}
 @media(min-width:900px){.main-nav{display:flex;}}
 
 .header-cta{display:none;flex-shrink:0;}
@@ -150,16 +114,16 @@ html.js-reveal .reveal{
   display:flex;flex-direction:column;gap:5px;
   background:none;border:none;cursor:pointer;padding:8px;
 }
-.nav-toggle span{width:22px;height:2px;background:var(--text);}
+.nav-toggle span{width:22px;height:2px;background:var(--cream);}
 @media(min-width:900px){.nav-toggle{display:none;}}
 
 .main-nav.open{
   display:flex;flex-direction:column;gap:0;
-  position:absolute;top:76px;left:0;right:0;
-  background:var(--cream);border-bottom:1px solid var(--line);
+  position:absolute;top:92px;left:0;right:0;
+  background:var(--black);border-bottom:1px solid var(--line-dark);
   padding:1rem 24px;
 }
-.main-nav.open a{padding:.7rem 0;border-bottom:1px solid var(--line);}
+.main-nav.open a{padding:.7rem 0;border-bottom:1px solid var(--line-dark);color:var(--cream-dim);}
 
 /* ===== Hero ===== */
 .hero-split{
@@ -211,9 +175,9 @@ html.js-reveal .reveal{
 
 /* Hero — dark, full-bleed photo variant */
 .hero-dark{background:var(--black);color:var(--cream);}
-.hero-dark .hero-split{padding:0;max-width:none;gap:0;}
+.hero-split.hero-dark{padding:0;max-width:none;gap:0;}
 @media(min-width:860px){
-  .hero-dark .hero-split{grid-template-columns:1fr 1fr;align-items:stretch;min-height:620px;}
+  .hero-split.hero-dark{grid-template-columns:1fr 1fr;align-items:stretch;min-height:620px;}
 }
 .hero-dark .hero-text{padding:3.5rem 24px 3.5rem;display:flex;flex-direction:column;justify-content:center;}
 @media(min-width:860px){.hero-dark .hero-text{padding:3rem 2.5vw 3rem 6vw;}}
@@ -226,8 +190,8 @@ html.js-reveal .reveal{
 .hero-dark .hero-photo{height:100%;aspect-ratio:auto;object-position:center 30%;}
 
 /* ===== Sections ===== */
-.section{padding:5rem 0;scroll-margin-top:115px;}
-#home,#booking{scroll-margin-top:115px;}
+.section{padding:5rem 0;scroll-margin-top:100px;}
+#home,#booking{scroll-margin-top:100px;}
 .section-alt{background:var(--cream-dim);}
 .section-dark{background:var(--black);color:var(--cream);}
 .section-dark .section-title{color:var(--cream);}
