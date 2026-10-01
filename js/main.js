@@ -17,6 +17,22 @@ if ('IntersectionObserver' in window && revealEls.length) {
   revealEls.forEach(el => el.classList.add('is-visible'));
 }
 
+// Treatments carousel (arrow buttons; finger/trackpad swipe works natively via CSS scroll-snap)
+const treatTrack = document.getElementById('treatmentsTrack');
+const treatPrev = document.getElementById('treatPrev');
+const treatNext = document.getElementById('treatNext');
+if (treatTrack && treatPrev && treatNext) {
+  const step = () => {
+    const tile = treatTrack.querySelector('.t-tile');
+    if (!tile) return treatTrack.clientWidth;
+    const style = getComputedStyle(treatTrack);
+    const gap = parseFloat(style.columnGap || style.gap || '24');
+    return tile.getBoundingClientRect().width + gap;
+  };
+  treatPrev.addEventListener('click', () => treatTrack.scrollBy({ left: -step(), behavior: 'smooth' }));
+  treatNext.addEventListener('click', () => treatTrack.scrollBy({ left: step(), behavior: 'smooth' }));
+}
+
 // Mobile nav toggle
 const navToggle = document.getElementById('navToggle');
 const navLinks = document.getElementById('navLinks');
