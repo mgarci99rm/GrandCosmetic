@@ -352,6 +352,12 @@ a{color:inherit;text-decoration:none;}
   font-family:var(--font-display);font-size:1.6rem;
   margin:0 auto 1.2rem;
 }
+.team-photo{
+  width:140px;height:140px;border-radius:50%;
+  object-fit:cover;object-position:top center;
+  margin:0 auto 1.2rem;
+  border:3px solid var(--gold);
+}
 .team-card h3{font-family:var(--font-display);font-size:1.25rem;margin-bottom:.2rem;}
 .team-role{font-family:var(--font-mono);font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;color:var(--gold-deep);margin-bottom:.9rem;}
 .team-bio{color:var(--text-soft);font-size:.95rem;}
@@ -420,26 +426,4 @@ a{color:inherit;text-decoration:none;}
 .footer-inner{display:flex;flex-direction:column;align-items:center;gap:.9rem;text-align:center;}
 .footer-inner p{font-size:.78rem;opacity:.65;}
 
-/* Popup */
-.popup-overlay{
-  position:fixed;inset:0;background:rgba(15,13,10,.72);
-  display:none;align-items:center;justify-content:center;
-  z-index:200;padding:20px;
-}
-.popup-overlay.visible{display:flex;}
-.popup-box{
-  background:var(--cream);max-width:380px;width:100%;
-  padding:2.4rem 2rem;text-align:center;position:relative;
-  border:1px solid var(--gold-deep);
-}
-.popup-mark{margin:0 auto 1rem;}
-.popup-box h3{font-family:var(--font-display);font-size:1.4rem;margin-bottom:.6rem;}
-.popup-box p{color:var(--text-soft);font-size:.9rem;margin-bottom:1.4rem;}
-.popup-form{display:flex;flex-direction:column;gap:.8rem;}
-.popup-form input{
-  padding:.75rem 1rem;border:1px solid var(--line-dark);font-family:var(--font-body);
-}
-.popup-close{
-  position:absolute;top:10px;right:14px;
-  background:none;border:none;font-size:1.4rem;cursor:pointer;color:var(--text-soft);
-}
+

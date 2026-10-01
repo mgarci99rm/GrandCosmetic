@@ -25,12 +25,6 @@ if (navToggle && navLinks) {
     link.addEventListener('click', () => navLinks.classList.remove('open'));
   });
 }
-
-// Email sign-up popup
-const popupOverlay = document.getElementById('popupOverlay');
-const popupClose = document.getElementById('popupClose');
-
-if (popupOverlay) {
   const alreadyShown = sessionStorage.getItem('gcc_popup_shown');
   if (!alreadyShown) {
     setTimeout(() => {
@@ -39,12 +33,4 @@ if (popupOverlay) {
     }, 8000);
   }
 
-  popupClose.addEventListener('click', () => {
-    popupOverlay.classList.remove('visible');
-  });
-  popupOverlay.addEventListener('click', (e) => {
-    if (e.target === popupOverlay) {
-      popupOverlay.classList.remove('visible');
-    }
-  });
-}
+  
