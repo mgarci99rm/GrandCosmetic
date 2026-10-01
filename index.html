@@ -12,6 +12,22 @@
 </head>
 <body>
 
+<!-- ===== MARQUEE TICKER ===== -->
+<div class="ticker">
+  <div class="ticker-track">
+    <span>5.0★ Average Rating</span><span class="dot">•</span>
+    <span>Physician-Led Medical Spa</span><span class="dot">•</span>
+    <span>Studio City, CA</span><span class="dot">•</span>
+    <span>By Appointment Only</span><span class="dot">•</span>
+    <span>Serving Since 2023</span><span class="dot">•</span>
+    <span>5.0★ Average Rating</span><span class="dot">•</span>
+    <span>Physician-Led Medical Spa</span><span class="dot">•</span>
+    <span>Studio City, CA</span><span class="dot">•</span>
+    <span>By Appointment Only</span><span class="dot">•</span>
+    <span>Serving Since 2023</span><span class="dot">•</span>
+  </div>
+</div>
+
 <!-- ===== HEADER ===== -->
 <header class="site-header" id="top">
   <div class="header-inner">
@@ -26,7 +42,7 @@
       <a href="#policy">Policy</a>
       <a href="#contact" class="nav-contact">Contact Us</a>
     </nav>
-    <a href="#booking" class="btn btn-gold header-cta">Book a Consult</a>
+    <a href="https://grand-cosmetic-clinic.square.site/" class="btn btn-gold header-cta" target="_blank" rel="noopener">Book a Consult</a>
     <button class="nav-toggle" id="navToggle" aria-label="Menu">
       <span></span><span></span><span></span>
     </button>
@@ -35,7 +51,7 @@
 
 <!-- ===== HERO / OPENING SECTION ===== -->
 <section class="hero hero-split" id="home">
-  <div class="hero-text">
+  <div class="hero-text reveal">
     <p class="kicker">Studio City, California</p>
     <h1>Aesthetic medicine,<br><em>practiced with restraint.</em></h1>
     <p class="lede">Refining features. Creating balance. A better you.</p>
@@ -44,45 +60,61 @@
       <a href="#treatments" class="btn btn-outline">See Our Treatments</a>
     </div>
   </div>
-  <div class="hero-photo-wrap">
-    <img src="assets/hero-botox.jpg" alt="Precision Botox injection at Grand Cosmetic Clinic" class="hero-photo">
+  <div class="hero-photo-wrap reveal">
+    <div class="hero-photo-frame">
+      <img src="assets/hero-botox.jpg" alt="Precision Botox injection at Grand Cosmetic Clinic" class="hero-photo">
+    </div>
+    <span class="hero-corner hero-corner-tl"></span>
+    <span class="hero-corner hero-corner-br"></span>
   </div>
 </section>
 
 <!-- ===== OUR BEAUTY TREATMENTS ===== -->
 <section class="section" id="treatments">
   <div class="container">
-    <p class="eyebrow">What We Offer</p>
-    <h2 class="section-title">Our Beauty Treatments</h2>
-    <p class="section-sub">A closer look at what each treatment is, and what it can do for you — before you see a single price.</p>
+    <p class="eyebrow reveal">What We Offer</p>
+    <h2 class="section-title reveal">Our Beauty Treatments</h2>
+    <p class="section-sub reveal">A closer look at what each treatment is, and what it can do for you — before you see a single price.</p>
+
+    <div class="category-strip reveal">
+      <div class="category-pill"><span class="num">01</span> Injectables</div>
+      <div class="category-pill"><span class="num">02</span> Skin Rejuvenation</div>
+      <div class="category-pill"><span class="num">03</span> Peptide Therapy</div>
+    </div>
 
     <div class="treatments-grid">
-      <article class="treatment-card">
+      <article class="treatment-card reveal">
+        <span class="t-index">01</span>
         <h3>Botox</h3>
         <p class="t-what">A neuromodulator that gently relaxes the muscles behind expression lines.</p>
         <p class="t-help"><strong>Helps with:</strong> forehead lines, frown lines (11s), and crow's feet, for a smoother, more rested look.</p>
       </article>
-      <article class="treatment-card">
+      <article class="treatment-card reveal">
+        <span class="t-index">02</span>
         <h3>Dysport</h3>
         <p class="t-what">A fast-acting alternative to Botox, known for a soft, natural spread.</p>
         <p class="t-help"><strong>Helps with:</strong> the same expression lines as Botox, with results some patients notice sooner.</p>
       </article>
-      <article class="treatment-card">
+      <article class="treatment-card reveal">
+        <span class="t-index">03</span>
         <h3>Jeuveau</h3>
         <p class="t-what">A modern neuromodulator formulated specifically for aesthetic use.</p>
         <p class="t-help"><strong>Helps with:</strong> moderate to severe frown lines, for a refreshed, natural expression.</p>
       </article>
-      <article class="treatment-card">
+      <article class="treatment-card reveal">
+        <span class="t-index">04</span>
         <h3>Dermal Fillers</h3>
         <p class="t-what">Hyaluronic-acid based gels that restore volume and definition.</p>
-        <p class="t-help"><strong>Helps with:</strong> cheeks, lips, jawline, and nose — adding structure and balance to your features.</p>
+        <p class="t-help"><strong>Helps with:</strong> lips, cheeks, under-eyes, chin, jawline, nasolabial folds, marionette lines, neck, temples, hands and nose.</p>
       </article>
-      <article class="treatment-card">
+      <article class="treatment-card reveal">
+        <span class="t-index">05</span>
         <h3>Hylenex</h3>
         <p class="t-what">An enzyme treatment used to dissolve or adjust previously placed filler.</p>
         <p class="t-help"><strong>Helps with:</strong> correcting asymmetry, migration, or simply changing your mind.</p>
       </article>
-      <article class="treatment-card">
+      <article class="treatment-card reveal">
+        <span class="t-index">06</span>
         <h3>Kybella</h3>
         <p class="t-what">An injectable treatment that permanently destroys fat cells under the chin.</p>
         <p class="t-help"><strong>Helps with:</strong> reducing submental fullness ("double chin") without surgery.</p>
@@ -94,7 +126,8 @@
 <!-- ===== THE GRAND MENU ===== -->
 <section class="section section-dark" id="menu">
   <div class="container">
-    <div class="menu-frame">
+    <div class="menu-frame reveal">
+      <span class="menu-ornament">✦</span>
       <p class="eyebrow eyebrow-light">Pricing</p>
       <h2 class="menu-title">The Grand Menu</h2>
       <p class="menu-sub">Every treatment, priced clearly — no surprises, just results.</p>
@@ -129,15 +162,20 @@
 <!-- ===== WELCOME / ABOUT US ===== -->
 <section class="section" id="about">
   <div class="container about-grid">
-    <div class="about-text">
+    <div class="about-text reveal">
       <img src="assets/logo.png" alt="Grand Cosmetic Clinic" class="about-logo">
       <p class="eyebrow">Our Story</p>
       <h2 class="section-title">Welcome to Grand Cosmetic Clinic</h2>
       <p><span class="story-note">Placeholder copy — swap for the clinic's real story before this goes live.</span></p>
-      <p>Grand Cosmetic Clinic was founded in Studio City with a simple idea: aesthetic medicine should be practiced by medical professionals, not sold like a commodity. What began as a small, appointment-only practice has grown into a trusted name for patients across the San Fernando Valley — built on precision, restraint, and results that look like you, only refreshed.</p>
+      <p>At Grand Cosmetic Clinic, our goal is to provide our clients spectacular transformations through safe and superior medical-grade aesthetic services. Our team of highly experienced professionals is ready to assist you with the most advanced techniques to help you look and feel your best, at any age.</p>
       <p>Every treatment plan starts with a real conversation. We believe the best work is the kind no one notices — just a subtle, natural improvement that leaves you looking like your best self, not "done."</p>
+      <div class="instagram-row">
+        <span class="eyebrow">Follow the work</span>
+        <a href="https://www.instagram.com/aestheticsbytricia/" target="_blank" rel="noopener">@aestheticsbytricia</a>
+        <a href="https://www.instagram.com/grandcosmeticclinic/" target="_blank" rel="noopener">@grandcosmeticclinic</a>
+      </div>
     </div>
-    <div class="about-photo-wrap">
+    <div class="about-photo-wrap reveal">
       <img src="https://images.unsplash.com/photo-1746017090180-ebb14a589639?q=80&w=1200&auto=format&fit=crop" alt="Precision injectable treatment" class="about-photo" loading="lazy">
     </div>
   </div>
@@ -146,20 +184,20 @@
 <!-- ===== MEET THE TEAM ===== -->
 <section class="section section-alt" id="team">
   <div class="container">
-    <p class="eyebrow">The People Behind Your Care</p>
-    <h2 class="section-title">Meet the Team</h2>
+    <p class="eyebrow reveal">The People Behind Your Care</p>
+    <h2 class="section-title reveal">Meet the Team</h2>
     <div class="team-grid">
-      <article class="team-card">
+      <article class="team-card reveal">
         <div class="team-avatar">BD</div>
         <h3>Dr. Behrang Dehkordi, MD</h3>
         <p class="team-role">Medical Director</p>
-        <p class="team-bio">Board-certified physician overseeing every treatment plan at Grand Cosmetic Clinic, with a focus on safe, medically-sound aesthetic care and natural-looking results.</p>
+        <p class="team-bio">A board-certified sports medicine physician specializing in non-surgical orthopedics. A former college soccer player, he earned his MD from the American University of the Caribbean and completed his residency at Hennepin County Medical Center, followed by a fellowship at the University of Illinois at Chicago. He has served as team physician for multiple universities and professional soccer teams, and remains active in soccer and skiing.</p>
       </article>
-      <article class="team-card">
-        <div class="team-avatar">T</div>
-        <h3>Tricia, NP</h3>
+      <article class="team-card reveal">
+        <div class="team-avatar">TS</div>
+        <h3>Tricia Santos, NP</h3>
         <p class="team-role">Nurse Practitioner</p>
-        <p class="team-bio">Injects with a precise, conservative hand, guiding patients through Botox, filler, and skin treatments tailored to their individual features and goals.</p>
+        <p class="team-bio">Born in New York and raised in the Philippines, Tricia earned her Bachelor's Degree in Nursing in 2014 and her Master's Degree in Nursing in 2021. She specializes in non-surgical aesthetic treatments — neuromodulators, dermal fillers, medical weight loss and laser procedures — and takes pride in helping patients look and feel their best.</p>
       </article>
     </div>
   </div>
@@ -168,29 +206,32 @@
 <!-- ===== CREDENTIALS ===== -->
 <section class="section section-dark credentials">
   <div class="container credentials-grid">
-    <div class="credential"><span class="credential-num">5.0</span><span class="credential-label">Average Rating</span></div>
-    <div class="credential"><span class="credential-num">MD+NP</span><span class="credential-label">Physician-Led Team</span></div>
-    <div class="credential"><span class="credential-num">By Appt.</span><span class="credential-label">Appointment Only</span></div>
-    <div class="credential"><span class="credential-num">2023</span><span class="credential-label">Serving Studio City Since</span></div>
+    <div class="credential reveal"><span class="credential-num">5.0</span><span class="credential-label">Average Rating</span></div>
+    <div class="credential reveal"><span class="credential-num">MD+NP</span><span class="credential-label">Physician-Led Team</span></div>
+    <div class="credential reveal"><span class="credential-num">By Appt.</span><span class="credential-label">Appointment Only</span></div>
+    <div class="credential reveal"><span class="credential-num">2023</span><span class="credential-label">Serving Studio City Since</span></div>
   </div>
 </section>
 
 <!-- ===== TESTIMONIALS ===== -->
 <section class="section" id="reviews">
   <div class="container">
-    <p class="eyebrow">Google Reviews</p>
-    <h2 class="section-title">What Our Patients Say</h2>
+    <p class="eyebrow reveal">Google Reviews</p>
+    <h2 class="section-title reveal">What Our Patients Say</h2>
     <div class="testimonial-grid">
-      <blockquote class="testimonial">
-        <p>"Dr. Dehkordi and his team are incredibly professional and knowledgeable. I felt comfortable and well taken care of from start to finish — the results looked completely natural."</p>
+      <blockquote class="testimonial reveal">
+        <span class="quote-mark">"</span>
+        <p>Dr. Dehkordi and his team are incredibly professional and knowledgeable. I felt comfortable and well taken care of from start to finish — the results looked completely natural.</p>
         <cite>— Google Review</cite>
       </blockquote>
-      <blockquote class="testimonial">
-        <p>"Tricia is amazing — gentle, precise, and honest about what would and wouldn't look good on me. This is the only place I trust with my face."</p>
+      <blockquote class="testimonial reveal">
+        <span class="quote-mark">"</span>
+        <p>Tricia is amazing — gentle, precise, and honest about what would and wouldn't look good on me. This is the only place I trust with my face.</p>
         <cite>— Google Review</cite>
       </blockquote>
-      <blockquote class="testimonial">
-        <p>"Clean office, easy scheduling, and zero pressure to upsell. They explained everything clearly before we started. Highly recommend Grand Cosmetic Clinic."</p>
+      <blockquote class="testimonial reveal">
+        <span class="quote-mark">"</span>
+        <p>Clean office, easy scheduling, and zero pressure to upsell. They explained everything clearly before we started. Highly recommend Grand Cosmetic Clinic.</p>
         <cite>— Google Review</cite>
       </blockquote>
     </div>
@@ -200,12 +241,12 @@
 <!-- ===== BOOKING + HOUSE RULES ===== -->
 <section class="section section-alt" id="policy">
   <div class="container">
-    <p class="eyebrow">Before You Book</p>
-    <h2 class="section-title">House Rules</h2>
+    <p class="eyebrow reveal">Before You Book</p>
+    <h2 class="section-title reveal">House Rules</h2>
     <div class="rules-grid">
-      <div class="rule"><h3>Deposit</h3><p>A $50 non-refundable deposit is required to reserve your appointment.</p></div>
-      <div class="rule"><h3>Cancellations</h3><p>Please provide at least 24 hours' notice to cancel or reschedule.</p></div>
-      <div class="rule"><h3>Arrivals</h3><p>Arrive on time — late arrivals may need to be rescheduled to protect every patient's appointment window.</p></div>
+      <div class="rule reveal"><h3>Deposit</h3><p>A $50 non-refundable deposit is required to reserve your appointment. It's applied toward your service and is valid for 30 days from your original appointment date. We accept cash and major credit cards (no American Express or personal checks).</p></div>
+      <div class="rule reveal"><h3>Cancellations</h3><p>Please provide at least 24 hours' notice to cancel or reschedule. If you rebook beyond 30 days, a new deposit is required.</p></div>
+      <div class="rule reveal"><h3>Arrivals & No-Shows</h3><p>Arrive on time — late arrivals may lose treatment time, with full payment still due. No-shows forfeit their deposit in full.</p></div>
     </div>
   </div>
 </section>
@@ -216,7 +257,7 @@
     <h2>Book or WhatsApp Us</h2>
     <p>Ready to get started, or still have questions? Reach us however is easiest for you.</p>
     <div class="hero-actions">
-      <a href="tel:+18182007769" class="btn btn-gold">Call to Book</a>
+      <a href="https://grand-cosmetic-clinic.square.site/" class="btn btn-gold" target="_blank" rel="noopener">Book Now</a>
       <a href="https://wa.me/18182007769" class="btn btn-outline-light" target="_blank" rel="noopener">WhatsApp Us</a>
     </div>
   </div>
@@ -225,10 +266,10 @@
 <!-- ===== QUESTIONS / INQUIRIES ===== -->
 <section class="section" id="inquiry">
   <div class="container inquiry-inner">
-    <p class="eyebrow">Not Ready to Book?</p>
-    <h2 class="section-title">Have a Question First</h2>
-    <p class="section-sub">Not sure which treatment is right for you? Send us a quick note and we'll help you figure it out.</p>
-    <form class="inquiry-form" onsubmit="event.preventDefault(); alert('Thanks! This form is a design preview and is not yet connected — we will wire it up to email before launch.');">
+    <p class="eyebrow reveal">Not Ready to Book?</p>
+    <h2 class="section-title reveal">Have a Question First</h2>
+    <p class="section-sub reveal">Not sure which treatment is right for you? Send us a quick note and we'll help you figure it out.</p>
+    <form class="inquiry-form reveal" onsubmit="event.preventDefault(); alert('Thanks! This form is a design preview and is not yet connected — we will wire it up to email before launch.');">
       <input type="email" placeholder="Your email address" required>
       <textarea placeholder="What would you like to know?" rows="3" required></textarea>
       <button type="submit" class="btn btn-gold">Send Inquiry</button>
@@ -239,22 +280,22 @@
 <!-- ===== GET IN TOUCH ===== -->
 <section class="section section-alt" id="contact">
   <div class="container contact-grid">
-    <div>
+    <div class="reveal">
       <p class="eyebrow">Get in Touch</p>
       <h2 class="section-title">Visit or Contact Us</h2>
       <ul class="contact-list">
-        <li><strong>Address</strong><br>12501 Chandler Blvd, Suite 103, Studio City, CA 91607</li>
+        <li><strong>Address</strong><br>11239 Ventura Blvd, Ste 212 Unit 2, Studio City, CA 91604</li>
         <li><strong>Phone / WhatsApp</strong><br><a href="tel:+18182007769">(818) 200-7769</a></li>
         <li><strong>Email</strong><br><a href="mailto:info@grandcosmeticclinic.com">info@grandcosmeticclinic.com</a></li>
         <li><strong>Hours</strong><br>
-          <span class="hours-row">Mon–Fri: 10am – 6pm</span>
-          <span class="hours-row">Sat: By appointment</span>
-          <span class="hours-row">Sun: Closed</span>
+          <span class="hours-row">By appointment only. No walk-ins.</span>
+          <span class="hours-row">Mon: Closed &nbsp;·&nbsp; Tue: 12–4pm &nbsp;·&nbsp; Wed: 9am–4pm</span>
+          <span class="hours-row">Thu: Closed &nbsp;·&nbsp; Fri: 9am–4pm &nbsp;·&nbsp; Sat: 9am–2pm &nbsp;·&nbsp; Sun: Closed</span>
         </li>
       </ul>
     </div>
-    <div class="map-wrap">
-      <iframe title="Grand Cosmetic Clinic location" src="https://www.google.com/maps?q=12501+Chandler+Blvd+Suite+103+Studio+City+CA+91607&output=embed" width="100%" height="100%" style="border:0;" allowfullscreen loading="lazy"></iframe>
+    <div class="map-wrap reveal">
+      <iframe title="Grand Cosmetic Clinic location" src="https://www.google.com/maps?q=11239+Ventura+Blvd+Ste+212+Unit+2+Studio+City+CA+91604&output=embed" width="100%" height="100%" style="border:0;" allowfullscreen loading="lazy"></iframe>
     </div>
   </div>
 </section>

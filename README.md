@@ -8,11 +8,16 @@ Static demo site for Grand Cosmetic Clinic (Studio City, CA), built as a concept
 - **v2** — Real logo added, black + gold palette derived from it.
 - **v3** — Full section restructure per client spec: treatments, pricing, about, team, credentials, testimonials, contact, map.
 - **v4** — Hero redesigned to a side-photo split layout with exact copy "Refining features. Creating balance. A better you."; "The Grand Menu" restyled as an elegant restaurant-style price list; logo made more prominent in the Welcome section.
-- **v5 (this version)** — Full rebuild from scratch. Same section flow and copy as v4, but:
+- **v5** — Full rebuild from scratch. Same section flow and copy as v4, but:
   - Swapped the hero photo for the client's own uploaded Botox close-up (`assets/hero-botox.jpg`) instead of a generic stock photo.
   - Replaced the "About/Welcome" section image with a more premium, editorial, Botox/filler-focused photo instead of a generic spa/facial stock image.
   - Reduced overall stock-photo usage — the design now leans on typography, whitespace and the gold/black palette rather than filling every section with photos, since the client felt earlier photos looked "too stock."
   - Team section keeps neutral initials avatars (no photos) until the clinic provides real, correctly-labeled photos of Dr. Dehkordi and Tricia.
+- **v6 (this version)** — Rebuilt again, this time cross-checked line-by-line against the real, live grandcosmeticclinic.com so every fact is accurate, plus a big visual upgrade:
+  - **Corrected real data** pulled directly from the live site: real address (11239 Ventura Blvd, Ste 212 Unit 2, Studio City, CA 91604 — the old draft had the wrong address), real opening hours (Tue/Wed/Fri/Sat only, by appointment), the real Square booking link (`grand-cosmetic-clinic.square.site`), Tricia's real full name and bio ("Tricia Santos, NP"), Dr. Dehkordi's real bio (sports medicine background), and the real, more detailed House Rules / cancellation policy text.
+  - Added the clinic's real service categories (Injectables, Skin Rejuvenation, Peptide Therapy) as a category strip above the treatment cards, and the real Instagram handles (@aestheticsbytricia, @grandcosmeticclinic) in the About section.
+  - **Visual upgrade**: added a scrolling gold ticker bar (5.0★ · Physician-Led · Studio City · By Appointment), scroll-triggered fade-in animations on every section, hover lift/shadow on treatment and team cards, a bordered corner-frame accent on the hero photo, and a large quote mark on testimonials.
+  - Logo and gold/black palette were re-confirmed by viewing the live site directly — matches what's already built.
 
 ## Set up as a brand-new repository (recommended if you got lost mixing folders before)
 
