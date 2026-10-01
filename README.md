@@ -18,6 +18,12 @@ Static demo site for Grand Cosmetic Clinic (Studio City, CA), built as a concept
   - Added the clinic's real service categories (Injectables, Skin Rejuvenation, Peptide Therapy) as a category strip above the treatment cards, and the real Instagram handles (@aestheticsbytricia, @grandcosmeticclinic) in the About section.
   - **Visual upgrade**: added a scrolling gold ticker bar (5.0★ · Physician-Led · Studio City · By Appointment), scroll-triggered fade-in animations on every section, hover lift/shadow on treatment and team cards, a bordered corner-frame accent on the hero photo, and a large quote mark on testimonials.
   - Logo and gold/black palette were re-confirmed by viewing the live site directly — matches what's already built.
+- **v7** — Replaced the split hero with a full-bleed, auto-rotating slider (inspired by a reference site the client liked): 3 full-screen slides (Botox, Dermal Fillers, Skin & Wellness) with a dark gradient over editorial photography, big uppercase headline, auto-advances every 4s, with arrows + dots for manual control. Removed the email pop-up entirely (client didn't want it). Added the client's real HD logo file.
+- **v8** — Two more visual upgrades inspired by a reference site the client liked:
+  - Added a "Our Most Requested Treatments" featured band right under the hero slider (3 square photo cards + "Learn More" buttons), matching the dark, editorial feel of the slider.
+  - Redesigned "Meet the Team" from centered cards into an editorial split layout per person: a dark pull-quote card + a tall photo on one side, full bio on the other, alternating sides for each team member.
+  - **Needs real photos to look right**: the team section now expects `assets/team-dehkordi.jpg` and `assets/team-tricia.jpg` (the real photos from the clinic's own "About Us" page) — save those into `assets/` with those exact filenames. Until then the photo boxes show as plain dark placeholders.
+  - The pull-quotes for both team members are **invented placeholder quotes** (clearly marked in the code) — swap for their real words before this goes live.
 
 ## Set up as a brand-new repository (recommended if you got lost mixing folders before)
 
@@ -41,5 +47,6 @@ This zip is a **complete, ready-to-go project** — it already includes its own 
 - **Fotos reales**: sigue usando una foto de stock (con licencia libre) en la sección "Welcome". En cuanto la clínica tenga fotos propias del local o del equipo, deberían sustituirla.
 - **Fotos del equipo**: Dr. Dehkordi y Tricia siguen mostrados con iniciales, no fotos. Necesitamos fotos reales y correctamente etiquetadas antes de publicar la web como oficial.
 - **Texto de "Welcome to Grand Cosmetic Clinic"**: es un texto inventado (marcado en la propia web como "Placeholder copy"). Hay que sustituirlo por la historia real de la clínica.
-- **Formulario de inquiry y pop-up de email**: ambos son solo de diseño (muestran una alerta), no están conectados a ningún backend real todavía. Se puede conectar con Formspree, Netlify Forms o similar antes de lanzar.
+- **Formulario de inquiry**: es solo de diseño (muestra una alerta), no está conectado a ningún backend real todavía. Se puede conectar con Formspree, Netlify Forms o similar antes de lanzar.
+- **Pop-up de email (15% descuento)**: eliminado a petición del cliente.
 - **WhatsApp**: se asume que el número (818) 200-7769 tiene WhatsApp activo — confirmar con la clínica.
