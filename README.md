@@ -13,11 +13,21 @@ Static demo site for Grand Cosmetic Clinic (Studio City, CA), built as a concept
   - Replaced the "About/Welcome" section image with a more premium, editorial, Botox/filler-focused photo instead of a generic spa/facial stock image.
   - Reduced overall stock-photo usage — the design now leans on typography, whitespace and the gold/black palette rather than filling every section with photos, since the client felt earlier photos looked "too stock."
   - Team section keeps neutral initials avatars (no photos) until the clinic provides real, correctly-labeled photos of Dr. Dehkordi and Tricia.
-- **v6 (this version)** — Rebuilt again, this time cross-checked line-by-line against the real, live grandcosmeticclinic.com so every fact is accurate, plus a big visual upgrade:
+- **v6** — Rebuilt again, this time cross-checked line-by-line against the real, live grandcosmeticclinic.com so every fact is accurate, plus a big visual upgrade:
   - **Corrected real data** pulled directly from the live site: real address (11239 Ventura Blvd, Ste 212 Unit 2, Studio City, CA 91604 — the old draft had the wrong address), real opening hours (Tue/Wed/Fri/Sat only, by appointment), the real Square booking link (`grand-cosmetic-clinic.square.site`), Tricia's real full name and bio ("Tricia Santos, NP"), Dr. Dehkordi's real bio (sports medicine background), and the real, more detailed House Rules / cancellation policy text.
   - Added the clinic's real service categories (Injectables, Skin Rejuvenation, Peptide Therapy) as a category strip above the treatment cards, and the real Instagram handles (@aestheticsbytricia, @grandcosmeticclinic) in the About section.
   - **Visual upgrade**: added a scrolling gold ticker bar (5.0★ · Physician-Led · Studio City · By Appointment), scroll-triggered fade-in animations on every section, hover lift/shadow on treatment and team cards, a bordered corner-frame accent on the hero photo, and a large quote mark on testimonials.
   - Logo and gold/black palette were re-confirmed by viewing the live site directly — matches what's already built.
+- **v7** — Added a full-bleed auto-rotating hero slider, a "Most Requested Treatments" photo band, and an editorial quote+photo+bio team layout. Client reviewed it and preferred the previous, simpler look, so this version was reverted.
+- **v8** — Reverted to the pre-slider layout (back to the v6-style split hero). Client-requested cleanup after trying the slider version.
+- **v9 (this version)** — Real team photos restored (Dr. Dehkordi and Tricia Santos, replacing the initials placeholders), the clinic logo enlarged in the Welcome section for more visual presence, and the 6 treatment cards (Botox, Dysport, Jeuveau, Dermal Fillers, Hylenex, Kybella) are now clickable links to their own dedicated pages. Each new treatment page has:
+  - A large hero photo area (currently a blank "Photo pending" placeholder — add the real photo whenever it's ready, same filename pattern as the other `assets/` images)
+  - Treatment name, short description, real price (pulled from the Grand Menu), and a "Book Now" button linking to the real Square booking page
+  - A "What to Expect" section with a short description of the procedure
+  - A 3-photo "Some of Our Work" gallery (also blank placeholders for now)
+  - A closing booking band with "Book Now" and "WhatsApp Us" buttons
+
+  **Note:** all new photo placeholders on these 6 pages are intentionally left blank (striped/dashed boxes) as requested, so it's obvious where real photos need to go. To add a photo, just save the image into the `assets/` folder and ask to have it wired into the matching placeholder — no need to touch the HTML/CSS yourself.
 
 ## Set up as a brand-new repository (recommended if you got lost mixing folders before)
 

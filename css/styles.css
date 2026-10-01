@@ -238,10 +238,12 @@ html.js-reveal .reveal{
 }
 @media(min-width:700px){.treatments-grid{grid-template-columns:1fr 1fr;}}
 .treatment-card{
+  display:block;
   position:relative;
   border:1px solid var(--line);
   padding:1.8rem;
   background:#fff;
+  cursor:pointer;
   transition:border-color .25s ease, transform .25s ease, box-shadow .25s ease;
 }
 .treatment-card:hover{
@@ -249,6 +251,16 @@ html.js-reveal .reveal{
   transform:translateY(-4px);
   box-shadow:0 14px 28px -18px rgba(15,13,10,.35);
 }
+.t-more{
+  display:inline-block;
+  margin-top:.9rem;
+  font-family:var(--font-mono);
+  font-size:.75rem;
+  letter-spacing:.06em;
+  color:var(--gold-deep);
+  transition:transform .2s ease;
+}
+.treatment-card:hover .t-more{transform:translateX(3px);}
 .t-index{
   position:absolute;top:1.2rem;right:1.4rem;
   font-family:var(--font-mono);font-size:.72rem;color:var(--line);
@@ -320,7 +332,7 @@ html.js-reveal .reveal{
   display:grid;grid-template-columns:1fr;gap:2.5rem;align-items:center;
 }
 @media(min-width:860px){.about-grid{grid-template-columns:1.1fr .9fr;gap:3.5rem;}}
-.about-logo{width:64px;height:64px;object-fit:contain;margin-bottom:1.4rem;}
+.about-logo{width:150px;height:150px;object-fit:contain;margin-bottom:1.6rem;}
 .about-text p{margin-bottom:1rem;color:var(--text-soft);}
 .instagram-row{
   display:flex;flex-wrap:wrap;align-items:center;gap:.9rem;
@@ -352,12 +364,11 @@ html.js-reveal .reveal{
 @media(min-width:700px){.team-grid{grid-template-columns:1fr 1fr;}}
 .team-card{background:#fff;border:1px solid var(--line);padding:2rem;text-align:center;transition:transform .25s ease, box-shadow .25s ease;}
 .team-card:hover{transform:translateY(-4px);box-shadow:0 14px 28px -18px rgba(15,13,10,.35);}
-.team-avatar{
-  width:84px;height:84px;border-radius:50%;
-  background:var(--black);color:var(--gold);
-  display:flex;align-items:center;justify-content:center;
-  font-family:var(--font-display);font-size:1.6rem;
+.team-photo{
+  width:140px;height:140px;border-radius:50%;
+  object-fit:cover;object-position:top center;
   margin:0 auto 1.2rem;
+  border:3px solid var(--gold);
 }
 .team-card h3{font-family:var(--font-display);font-size:1.25rem;margin-bottom:.2rem;}
 .team-role{font-family:var(--font-mono);font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;color:var(--gold-deep);margin-bottom:.9rem;}
@@ -427,3 +438,55 @@ html.js-reveal .reveal{
 .footer-inner{display:flex;flex-direction:column;align-items:center;gap:.9rem;text-align:center;}
 .footer-inner p{font-size:.78rem;opacity:.65;}
 
+
+/* ===== Treatment Detail Pages ===== */
+.photo-placeholder{
+  background:repeating-linear-gradient(45deg, #fff, #fff 10px, var(--cream-dim) 10px, var(--cream-dim) 20px);
+  border:1px dashed var(--line-dark);
+  display:flex;align-items:center;justify-content:center;
+  text-align:center;
+  color:var(--text-soft);
+  font-family:var(--font-mono);
+  font-size:.78rem;
+  letter-spacing:.06em;
+  text-transform:uppercase;
+  padding:1rem;
+}
+.treatment-hero{padding:2.5rem 0 1rem;}
+.treatment-hero-photo{
+  aspect-ratio:21/9;
+  min-height:260px;
+  margin-bottom:2.4rem;
+}
+.treatment-hero-text{max-width:720px;}
+.treatment-hero-text .kicker{margin-bottom:.8rem;}
+.treatment-hero-text h1{
+  font-family:var(--font-display);
+  font-weight:500;
+  font-size:clamp(2.2rem,5vw,3.2rem);
+  margin-bottom:1rem;
+}
+.treatment-hero-text .lede{font-size:1.05rem;color:var(--text-soft);margin-bottom:1.6rem;max-width:56ch;}
+.treatment-price-tag{
+  display:inline-block;
+  font-family:var(--font-mono);
+  font-size:.82rem;
+  letter-spacing:.04em;
+  color:var(--gold-deep);
+  border:1px solid var(--gold-deep);
+  padding:.4rem .9rem;
+  margin-bottom:1.8rem;
+}
+.expect-text{max-width:70ch;color:var(--text-soft);font-size:1rem;line-height:1.8;}
+.gallery-grid{display:grid;grid-template-columns:1fr;gap:1.2rem;}
+@media(min-width:700px){.gallery-grid{grid-template-columns:repeat(3,1fr);}}
+.gallery-grid .photo-placeholder{aspect-ratio:1/1;}
+.back-link{
+  display:inline-block;
+  font-family:var(--font-mono);
+  font-size:.78rem;
+  letter-spacing:.06em;
+  color:var(--text-soft);
+  margin-bottom:1.5rem;
+}
+.back-link:hover{color:var(--gold-deep);}
