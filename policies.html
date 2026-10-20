@@ -8,15 +8,17 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="assets/logo.png">
 <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+<a href="#main" class="skip-link">Skip to main content</a>
 
 <!-- ===== HEADER ===== -->
 <header class="site-header" id="top">
   <div class="header-inner">
     <a href="index.html" class="brand">
-      <img src="assets/logo.png" alt="Grand Cosmetic Clinic" class="brand-logo">
+      <img src="assets/logo.png" alt="Grand Cosmetic Clinic — home" class="brand-logo">
     </a>
     <nav class="main-nav" id="navLinks">
       <a href="index.html">Home</a>
@@ -25,12 +27,13 @@
       <a href="index.html#contact" class="nav-contact">Contact Us</a>
     </nav>
     <a href="https://grand-cosmetic-clinic.square.site/" class="btn btn-gold header-cta" target="_blank" rel="noopener">Book a Consult</a>
-    <button class="nav-toggle" id="navToggle" aria-label="Menu">
+    <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false" aria-controls="navLinks">
       <span></span><span></span><span></span>
     </button>
   </div>
 </header>
 
+<main id="main">
 <!-- ===== POLICIES ===== -->
 <section class="section section-dark policies-hero">
   <div class="container">
@@ -38,6 +41,7 @@
     <p class="eyebrow eyebrow-light">Grand Cosmetic Clinic</p>
     <h1 class="section-title">Our Policies</h1>
     <p class="lede">At Grand Cosmetic Clinic, we are committed to delivering exceptional service and care to our clients. To help us maintain a smooth and professional experience for everyone, we kindly ask that you review our spa policies prior to your appointment. By scheduling an appointment, you acknowledge and agree to comply with these policies.</p>
+    <p class="policy-meta">Effective date: October 20, 2026 &nbsp;·&nbsp; Last updated: October 20, 2026</p>
   </div>
 </section>
 
@@ -48,8 +52,9 @@
       <a href="#appointment">Appointment Policy</a>
       <a href="#refunds">Refunds</a>
       <a href="#privacy">Privacy Policy</a>
+      <a href="#california">California Privacy Rights</a>
+      <a href="#website">Website Notice</a>
       <a href="#terms">Terms &amp; Conditions</a>
-      <a href="#sms-inquiry">SMS Consent (Inquiry)</a>
       <a href="#sms-booking">SMS Consent (Booking)</a>
       <a href="#a2p">A2P 10DLC</a>
       <a href="#sms-privacy">SMS Privacy Policy</a>
@@ -77,7 +82,7 @@
       <p><strong>Personal Information:</strong> Name, email, phone number, date of birth, appointment details, and any other information you provide.</p>
       <p><strong>Payment Information:</strong> Payment details are collected securely through trusted third-party processors (e.g., Square). We do not store your full payment information on our servers.</p>
       <p><strong>Communications:</strong> Records of your communications with us, including SMS messages and emails.</p>
-      <p><strong>Form Submissions:</strong> When you submit an inquiry through our website contact forms, your information (including name, email, and phone number) is securely transmitted via a third-party service (Formspree) and delivered to our business email account (Gmail).</p>
+      <p><strong>Contact by Phone or Email:</strong> If you call, text or email us, we receive your name, contact details and anything you choose to tell us, and we use it only to respond to you.</p>
 
       <h3>2. How We Use Your Information</h3>
       <ul>
@@ -95,7 +100,6 @@
       <p>We do not sell, rent, or trade your personal information. We may share information with:</p>
       <ul>
         <li>Third-party service providers (e.g., payment processors like Square)</li>
-        <li>Third-party form services (such as Formspree) to securely collect and transmit inquiry submissions</li>
         <li>As required by law or to protect our rights</li>
       </ul>
 
@@ -110,6 +114,20 @@
 
       <h3>8. Updates to This Privacy Policy</h3>
       <p>We may update this Privacy Policy from time to time to reflect changes in our practices or for other operational, legal, or regulatory reasons. When we make changes, we will update the Effective Date at the top of this policy. We encourage you to review this Privacy Policy periodically.</p>
+    </article>
+
+    <article class="policy-card" id="california">
+      <h2>California Privacy Rights</h2>
+      <p>If you are a California resident, you may ask us to tell you what personal information we have collected about you and how we use and disclose it, to correct it, or to delete it, subject to the exceptions allowed by law (including medical-record retention requirements). We will not treat you differently for making a request.</p>
+      <p>We do not sell your personal information, and we do not share it with third parties for cross-context behavioral advertising.</p>
+      <p>To make a request, email <a href="mailto:info@grandcosmeticclinic.com">info@grandcosmeticclinic.com</a> or call <a href="tel:+18182007769">(818) 200-7769</a>. We may need to confirm your identity before we act on it.</p>
+    </article>
+
+    <article class="policy-card" id="website">
+      <h2>Website Notice</h2>
+      <p><strong>Cookies and tracking.</strong> This website does not use advertising or analytics cookies. It loads fonts from Google Fonts and an embedded Google Map, and Google may receive your IP address and basic browser information when those load. Booking and payments take place on Square's website under Square's own privacy policy.</p>
+      <p><strong>Health information.</strong> Please avoid sending medical or health details by text or email. Clinical questions are best discussed by phone or at your consultation.</p>
+      <p><strong>Text messages.</strong> This website has no sign-up or contact form. Consent to text messages is requested when you book an appointment; it is never a condition of any purchase or service. See the SMS sections below for full terms.</p>
     </article>
 
     <article class="policy-card" id="terms">
@@ -128,17 +146,6 @@
       <p>Grand Cosmetic Clinic is not liable for any indirect, incidental, or consequential damages arising from the use of our services.</p>
       <h3>7. Governing Law</h3>
       <p>These Terms &amp; Conditions are governed by the laws of the State of California.</p>
-    </article>
-
-    <article class="policy-card" id="sms-inquiry">
-      <h2>Contact Us Page — SMS Consent (Inquiry-Related Messages Only)</h2>
-      <p>By submitting this form, you agree to receive text messages strictly related to your inquiry with Grand Cosmetic Clinic. This may include responses to your questions, service-related information, and limited follow-up communication.</p>
-      <p>We do not send unrelated content or third-party offers without your explicit consent.</p>
-      <p>Message frequency may vary depending on your interaction with us. Message and data rates may apply. Reply STOP to unsubscribe at any time. Reply HELP for assistance.</p>
-      <p>By checking this box, I confirm that I am 18 years of age or older, that I would like to receive occasional promotional messages from Grand Cosmetic Clinic (including special offers), and that I have read and agree to the Privacy Policy and Terms &amp; Conditions. (Message frequency may vary. Message and data rates may apply.)</p>
-      <p>Prefer not to receive text messages?<br>
-      📞 Call us directly at <a href="tel:+18182007769">(818) 200-7769</a><br>
-      📧 Email us at <a href="mailto:info@grandcosmeticclinic.com">info@grandcosmeticclinic.com</a></p>
     </article>
 
     <article class="policy-card" id="sms-booking">
@@ -202,16 +209,22 @@
       <p>We accept cash and all major credit cards (except American Express), but not personal checks.</p>
     </article>
 
-    <p class="policy-footer-note">This page reflects Grand Cosmetic Clinic's official policies, provided for this concept site.</p>
+    
   </div>
 </section>
+</main>
 
 <!-- ===== FOOTER ===== -->
 <footer class="site-footer">
   <div class="container footer-inner">
-    <span class="brand-mark">GC</span>
-    <p>&copy; 2026 Grand Cosmetic Clinic. Concept site — not the clinic's official website.</p>
-    <a href="index.html" class="footer-policy-link">&larr; Back to Home</a>
+    <img src="assets/logo.png" alt="" class="footer-logo" width="56" height="56">
+    <p>&copy; 2026 Grand Cosmetic Clinic. All rights reserved. 11239 Ventura Blvd, Ste 212 Unit 2, Studio City, CA 91604.</p>
+    <nav class="footer-links" aria-label="Legal">
+      <a href="index.html" class="footer-policy-link">&larr; Back to Home</a>
+      <a href="#privacy" class="footer-policy-link">Privacy Policy</a>
+      <a href="#terms" class="footer-policy-link">Terms &amp; Conditions</a>
+      <a href="#sms-privacy" class="footer-policy-link">SMS Terms</a>
+    </nav>
   </div>
 </footer>
 

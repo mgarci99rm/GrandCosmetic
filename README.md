@@ -29,6 +29,15 @@ Static demo site for Grand Cosmetic Clinic (Studio City, CA), built as a concept
 
   **Note:** all new photo placeholders on these 6 pages are intentionally left blank (striped/dashed boxes) as requested, so it's obvious where real photos need to go. To add a photo, just save the image into the `assets/` folder and ask to have it wired into the matching placeholder — no need to touch the HTML/CSS yourself.
 
+## v10 — Launch-ready pass (Oct 2026)
+
+- Dark hero + treatments carousel, circular logo badge, real photos for Botox/Dysport/Jeuveau, `policies.html` with the clinic's full legal text.
+- No website form (simpler legally): "Have a Question First" is now Call / Email buttons. Real Google reviews (Mellissa K., Victoria M., Natalie G.) added.
+- Removed the earlier invented testimonials, the "placeholder copy" note, the "concept site" footer and the Unsplash hotlink.
+- Treatment pages rebuilt in the new design (no "Photo pending" blocks).
+- Accessibility: darker gold for text contrast (WCAG AA), skip link, visible focus, aria on menu, reduced-motion support.
+- Policies page: effective date, California privacy rights and website notice added (drafted here — have the clinic's lawyer review).
+
 ## Set up as a brand-new repository (recommended if you got lost mixing folders before)
 
 This zip is a **complete, ready-to-go project** — it already includes its own Git history, so you don't need to copy/paste files into an existing folder at all.
@@ -51,6 +60,6 @@ This zip is a **complete, ready-to-go project** — it already includes its own 
 - **Fotos reales**: sigue usando una foto de stock (con licencia libre) en la sección "Welcome". En cuanto la clínica tenga fotos propias del local o del equipo, deberían sustituirla.
 - **Fotos del equipo**: Dr. Dehkordi y Tricia siguen mostrados con iniciales, no fotos. Necesitamos fotos reales y correctamente etiquetadas antes de publicar la web como oficial.
 - **Texto de "Welcome to Grand Cosmetic Clinic"**: es un texto inventado (marcado en la propia web como "Placeholder copy"). Hay que sustituirlo por la historia real de la clínica.
-- **Formulario de inquiry**: es solo de diseño (muestra una alerta), no está conectado a ningún backend real todavía. Se puede conectar con Formspree, Netlify Forms o similar antes de lanzar.
+- **Formulario**: eliminado. Hay botones de llamar y escribir por email, así que no se recogen datos en la web.
 - **Pop-up de email (15% descuento)**: eliminado a petición del cliente.
 - **WhatsApp**: se asume que el número (818) 200-7769 tiene WhatsApp activo — confirmar con la clínica.

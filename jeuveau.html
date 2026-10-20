@@ -8,32 +8,17 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="assets/logo.png">
 <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-<!-- ===== MARQUEE TICKER ===== -->
-<div class="ticker">
-  <div class="ticker-track">
-    <span>5.0★ Average Rating</span><span class="dot">•</span>
-    <span>Physician-Led Medical Spa</span><span class="dot">•</span>
-    <span>Studio City, CA</span><span class="dot">•</span>
-    <span>By Appointment Only</span><span class="dot">•</span>
-    <span>Serving Since 2023</span><span class="dot">•</span>
-    <span>5.0★ Average Rating</span><span class="dot">•</span>
-    <span>Physician-Led Medical Spa</span><span class="dot">•</span>
-    <span>Studio City, CA</span><span class="dot">•</span>
-    <span>By Appointment Only</span><span class="dot">•</span>
-    <span>Serving Since 2023</span><span class="dot">•</span>
-  </div>
-</div>
-
+<a href="#main" class="skip-link">Skip to main content</a>
 <!-- ===== HEADER ===== -->
 <header class="site-header" id="top">
   <div class="header-inner">
     <a href="index.html" class="brand">
-      <span class="brand-mark">GC</span>
-      <span class="brand-word">Grand Cosmetic Clinic</span>
+      <img src="assets/logo.png" alt="Grand Cosmetic Clinic — home" class="brand-logo">
     </a>
     <nav class="main-nav" id="navLinks">
       <a href="index.html">Home</a>
@@ -43,17 +28,18 @@
       <a href="index.html#contact" class="nav-contact">Contact Us</a>
     </nav>
     <a href="https://grand-cosmetic-clinic.square.site/" class="btn btn-gold header-cta" target="_blank" rel="noopener">Book a Consult</a>
-    <button class="nav-toggle" id="navToggle" aria-label="Menu">
+    <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false" aria-controls="navLinks">
       <span></span><span></span><span></span>
     </button>
   </div>
 </header>
 
+<main id="main">
 <!-- ===== TREATMENT HERO ===== -->
 <section class="section treatment-hero">
   <div class="container">
     <a href="index.html#treatments" class="back-link">&larr; Back to all treatments</a>
-    <div class="photo-placeholder treatment-hero-photo">Photo pending — add Jeuveau photo here</div>
+    <img src="assets/jeuveau.jpg" alt="" class="treatment-hero-photo">
     <div class="treatment-hero-text">
       <p class="kicker">Studio City, California</p>
       <h1>Jeuveau</h1>
@@ -72,20 +58,8 @@
   <div class="container">
     <p class="eyebrow">The Process</p>
     <h2 class="section-title">What to Expect</h2>
-    <p class="expect-text">Jeuveau is injected the same way as other neuromodulators: a brief consultation, then a few minutes of quick injections with a fine needle. There's no downtime afterward. Most patients see results within a few days, lasting around 3–4 months.</p>
-  </div>
-</section>
-
-<!-- ===== GALLERY ===== -->
-<section class="section">
-  <div class="container">
-    <p class="eyebrow">Real Results</p>
-    <h2 class="section-title">Some of Our Work</h2>
-    <div class="gallery-grid">
-      <div class="photo-placeholder">Photo pending</div>
-      <div class="photo-placeholder">Photo pending</div>
-      <div class="photo-placeholder">Photo pending</div>
-    </div>
+    <p class="expect-text">Jeuveau is injected the same way as other neuromodulators: a brief consultation, then a few minutes of quick injections with a fine needle. Most patients return to normal activities afterward and see results within a few days, lasting around 3–4 months.</p>
+    <p class="disclaimer">Jeuveau is a prescription treatment. Candidacy is determined by a licensed provider at your consultation. Individual results vary, and timing and duration differ from patient to patient.</p>
   </div>
 </section>
 
@@ -101,11 +75,19 @@
   </div>
 </section>
 
+</main>
 <!-- ===== FOOTER ===== -->
 <footer class="site-footer">
   <div class="container footer-inner">
-    <span class="brand-mark">GC</span>
-    <p>&copy; 2026 Grand Cosmetic Clinic. Concept site — not the clinic's official website.</p>
+    <img src="assets/logo.png" alt="" class="footer-logo" width="56" height="56">
+    <p>&copy; 2026 Grand Cosmetic Clinic. All rights reserved. 11239 Ventura Blvd, Ste 212 Unit 2, Studio City, CA 91604.</p>
+    <nav class="footer-links" aria-label="Legal">
+      <a href="policies.html" class="footer-policy-link">Policies</a>
+      <a href="policies.html#privacy" class="footer-policy-link">Privacy Policy</a>
+      <a href="policies.html#terms" class="footer-policy-link">Terms &amp; Conditions</a>
+      <a href="policies.html#sms-privacy" class="footer-policy-link">SMS Terms</a>
+    </nav>
+    <p class="footer-disclaimer">Prescription treatments are provided only after an in-person consultation with a licensed provider. Individual results vary. Prices shown may change without notice.</p>
   </div>
 </footer>
 

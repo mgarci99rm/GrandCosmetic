@@ -8,15 +8,20 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="assets/logo.png">
+<meta property="og:title" content="Grand Cosmetic Clinic | Studio City, CA">
+<meta property="og:description" content="Physician-led medical spa in Studio City, CA.">
+<meta property="og:image" content="assets/portada.jpg">
 <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+<a href="#main" class="skip-link">Skip to main content</a>
 
 <!-- ===== HEADER ===== -->
 <header class="site-header" id="top">
   <div class="header-inner">
     <a href="#top" class="brand">
-      <img src="assets/logo.png" alt="Grand Cosmetic Clinic" class="brand-logo">
+      <img src="assets/logo.png" alt="Grand Cosmetic Clinic — back to top" class="brand-logo">
     </a>
     <nav class="main-nav" id="navLinks">
       <a href="#home">Home</a>
@@ -26,17 +31,18 @@
       <a href="#contact" class="nav-contact">Contact Us</a>
     </nav>
     <a href="https://grand-cosmetic-clinic.square.site/" class="btn btn-gold header-cta" target="_blank" rel="noopener">Book a Consult</a>
-    <button class="nav-toggle" id="navToggle" aria-label="Menu">
+    <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false" aria-controls="navLinks">
       <span></span><span></span><span></span>
     </button>
   </div>
 </header>
 
+<main id="main">
 <!-- ===== HERO / OPENING SECTION ===== -->
 <section class="hero hero-split hero-dark" id="home">
   <div class="hero-text">
     <div class="hero-badge">
-      <img src="assets/logo.png" alt="Grand Cosmetic Clinic">
+      <img src="assets/logo.png" alt="">
     </div>
     <p class="kicker">Medical Aesthetics</p>
     <h1>Refined<br>Enhancements.<br><em>Naturally You.</em></h1>
@@ -70,7 +76,7 @@
       <button class="slider-arrow slider-prev" id="treatPrev" aria-label="Previous treatments" type="button">&larr;</button>
       <div class="treatments-track" id="treatmentsTrack">
         <a href="botox.html" class="t-tile">
-          <div class="t-tile-photo"><img src="assets/botox.jpg" alt="Botox treatment at Grand Cosmetic Clinic"></div>
+          <div class="t-tile-photo"><img src="assets/botox.jpg" alt=""></div>
           <div class="t-tile-text">
             <h3>Botox</h3>
             <p>A neuromodulator that gently relaxes expression lines for a smoother, more rested look.</p>
@@ -78,7 +84,7 @@
           </div>
         </a>
         <a href="dysport.html" class="t-tile">
-          <div class="t-tile-photo"><img src="assets/dysport.jpg" alt="Dysport treatment at Grand Cosmetic Clinic"></div>
+          <div class="t-tile-photo"><img src="assets/dysport.jpg" alt=""></div>
           <div class="t-tile-text">
             <h3>Dysport</h3>
             <p>A fast-acting alternative to Botox, known for a soft, natural spread.</p>
@@ -86,7 +92,7 @@
           </div>
         </a>
         <a href="jeuveau.html" class="t-tile">
-          <div class="t-tile-photo"><img src="assets/jeuveau.jpg" alt="Jeuveau treatment at Grand Cosmetic Clinic"></div>
+          <div class="t-tile-photo"><img src="assets/jeuveau.jpg" alt=""></div>
           <div class="t-tile-text">
             <h3>Jeuveau</h3>
             <p>A modern neuromodulator formulated specifically for aesthetic use.</p>
@@ -94,7 +100,7 @@
           </div>
         </a>
         <a href="dermal-fillers.html" class="t-tile">
-          <div class="t-tile-photo photo-placeholder-dark">Photo pending</div>
+          <div class="t-tile-photo t-tile-noimg" aria-hidden="true"><span>D</span></div>
           <div class="t-tile-text">
             <h3>Dermal Fillers</h3>
             <p>Hyaluronic-acid based gels that restore volume and definition.</p>
@@ -102,7 +108,7 @@
           </div>
         </a>
         <a href="hylenex.html" class="t-tile">
-          <div class="t-tile-photo photo-placeholder-dark">Photo pending</div>
+          <div class="t-tile-photo t-tile-noimg" aria-hidden="true"><span>H</span></div>
           <div class="t-tile-text">
             <h3>Hylenex</h3>
             <p>An enzyme treatment used to dissolve or adjust previously placed filler.</p>
@@ -110,7 +116,7 @@
           </div>
         </a>
         <a href="kybella.html" class="t-tile">
-          <div class="t-tile-photo photo-placeholder-dark">Photo pending</div>
+          <div class="t-tile-photo t-tile-noimg" aria-hidden="true"><span>K</span></div>
           <div class="t-tile-text">
             <h3>Kybella</h3>
             <p>An injectable treatment that permanently destroys fat cells under the chin.</p>
@@ -231,7 +237,6 @@
       <img src="assets/logo.png" alt="Grand Cosmetic Clinic" class="about-logo">
       <p class="eyebrow">Our Story</p>
       <h2 class="section-title">Welcome to Grand Cosmetic Clinic</h2>
-      <p><span class="story-note">Placeholder copy — swap for the clinic's real story before this goes live.</span></p>
       <p>At Grand Cosmetic Clinic, our goal is to provide our clients spectacular transformations through safe and superior medical-grade aesthetic services. Our team of highly experienced professionals is ready to assist you with the most advanced techniques to help you look and feel your best, at any age.</p>
       <p>Every treatment plan starts with a real conversation. We believe the best work is the kind no one notices — just a subtle, natural improvement that leaves you looking like your best self, not "done."</p>
       <div class="instagram-row">
@@ -241,7 +246,7 @@
       </div>
     </div>
     <div class="about-photo-wrap reveal">
-      <img src="https://images.unsplash.com/photo-1746017090180-ebb14a589639?q=80&w=1200&auto=format&fit=crop" alt="Precision injectable treatment" class="about-photo" loading="lazy">
+      <img src="assets/hero-botox.jpg" alt="Close-up of a precision injectable treatment" class="about-photo" loading="lazy">
     </div>
   </div>
 </section>
@@ -278,27 +283,24 @@
   </div>
 </section>
 
-<!-- ===== TESTIMONIALS ===== -->
+<!-- ===== REVIEWS ===== -->
 <section class="section" id="reviews">
   <div class="container">
     <p class="eyebrow reveal">Google Reviews</p>
     <h2 class="section-title reveal">What Our Patients Say</h2>
-    <div class="testimonial-grid">
-      <blockquote class="testimonial reveal">
-        <span class="quote-mark">"</span>
-        <p>Dr. Dehkordi and his team are incredibly professional and knowledgeable. I felt comfortable and well taken care of from start to finish — the results looked completely natural.</p>
-        <cite>— Google Review</cite>
-      </blockquote>
-      <blockquote class="testimonial reveal">
-        <span class="quote-mark">"</span>
-        <p>Tricia is amazing — gentle, precise, and honest about what would and wouldn't look good on me. This is the only place I trust with my face.</p>
-        <cite>— Google Review</cite>
-      </blockquote>
-      <blockquote class="testimonial reveal">
-        <span class="quote-mark">"</span>
-        <p>Clean office, easy scheduling, and zero pressure to upsell. They explained everything clearly before we started. Highly recommend Grand Cosmetic Clinic.</p>
-        <cite>— Google Review</cite>
-      </blockquote>
+    <div class="review-list">
+      <figure class="review reveal">
+        <blockquote><p>Tricia is a true professional and really makes you feel comfortable and safe. She really listens to your concerns and needs. I've been to many other places that are pushy, but Tricia is the opposite. The whole experience is super smooth - easy to book appointments via text with her assistant, they text reminders, and there is ample free parking. And obvi RESULTS!! The results are impeccable. Highly recommend!</p></blockquote>
+        <figcaption>Mellissa K. · Google review</figcaption>
+      </figure>
+      <figure class="review reveal">
+        <blockquote><p>Excellent quality and service! I tried multiple cosmetologists before coming to Tricia and she is the only one that made me come back. Highly recommend if you want to find someone who you can trust, really great value too!</p></blockquote>
+        <figcaption>Victoria M. · Google review</figcaption>
+      </figure>
+      <figure class="review reveal">
+        <blockquote><p>Tricia is the absolute best! So happy I found a gem in Grand Cosmetics. I specifically go for a lil Dysport maintenance. She takes the time to go over my problem areas and tweak anything needed. I'm big on customer service as a small business owner myself, and I am thoroughly impressed! Will be back again and again.</p></blockquote>
+        <figcaption>Natalie G. · Google review</figcaption>
+      </figure>
     </div>
   </div>
 </section>
@@ -328,17 +330,16 @@
   </div>
 </section>
 
-<!-- ===== QUESTIONS / INQUIRIES ===== -->
+<!-- ===== QUESTIONS ===== -->
 <section class="section" id="inquiry">
   <div class="container inquiry-inner">
     <p class="eyebrow reveal">Not Ready to Book?</p>
     <h2 class="section-title reveal">Have a Question First</h2>
-    <p class="section-sub reveal">Not sure which treatment is right for you? Send us a quick note and we'll help you figure it out.</p>
-    <form class="inquiry-form reveal" onsubmit="event.preventDefault(); alert('Thanks! This form is a design preview and is not yet connected — we will wire it up to email before launch.');">
-      <input type="email" placeholder="Your email address" required>
-      <textarea placeholder="What would you like to know?" rows="3" required></textarea>
-      <button type="submit" class="btn btn-gold">Send Inquiry</button>
-    </form>
+    <p class="section-sub reveal">Not sure which treatment is right for you? Call or email us and we'll help you figure it out.</p>
+    <div class="hero-actions contact-actions reveal">
+      <a href="tel:+18182007769" class="btn btn-gold">Call (818) 200-7769</a>
+      <a href="mailto:info@grandcosmeticclinic.com" class="btn btn-outline">Email Us</a>
+    </div>
   </div>
 </section>
 
@@ -352,6 +353,7 @@
         <li><strong>Address</strong><br>11239 Ventura Blvd, Ste 212 Unit 2, Studio City, CA 91604</li>
         <li><strong>Phone / WhatsApp</strong><br><a href="tel:+18182007769">(818) 200-7769</a></li>
         <li><strong>Email</strong><br><a href="mailto:info@grandcosmeticclinic.com">info@grandcosmeticclinic.com</a></li>
+        <li><strong>Reviews</strong><br><a class="reviews-link" href="https://www.google.com/maps/search/?api=1&amp;query=Grand+Cosmetic+Clinic+11239+Ventura+Blvd+Studio+City+CA" target="_blank" rel="noopener">Read our Google reviews<span class="sr-only"> (opens in a new tab)</span></a></li>
         <li><strong>Hours</strong><br>
           <span class="hours-row">By appointment only. No walk-ins.</span>
           <span class="hours-row">Mon: Closed &nbsp;·&nbsp; Tue: 12–4pm &nbsp;·&nbsp; Wed: 9am–4pm</span>
@@ -365,12 +367,20 @@
   </div>
 </section>
 
+</main>
+
 <!-- ===== FOOTER ===== -->
 <footer class="site-footer">
   <div class="container footer-inner">
-    <span class="brand-mark">GC</span>
-    <p>&copy; 2026 Grand Cosmetic Clinic. Concept site — not the clinic's official website.</p>
-    <a href="policies.html" class="footer-policy-link">Policies &amp; Privacy</a>
+    <img src="assets/logo.png" alt="" class="footer-logo" width="56" height="56">
+    <p>&copy; 2026 Grand Cosmetic Clinic. All rights reserved. 11239 Ventura Blvd, Ste 212 Unit 2, Studio City, CA 91604.</p>
+    <nav class="footer-links" aria-label="Legal">
+      <a href="policies.html" class="footer-policy-link">Policies</a>
+      <a href="policies.html#privacy" class="footer-policy-link">Privacy Policy</a>
+      <a href="policies.html#terms" class="footer-policy-link">Terms &amp; Conditions</a>
+      <a href="policies.html#sms-privacy" class="footer-policy-link">SMS Terms</a>
+    </nav>
+    <p class="footer-disclaimer">Prescription treatments are provided only after an in-person consultation with a licensed provider, who determines whether a treatment is appropriate for you. Individual results vary. Prices shown may change without notice.</p>
   </div>
 </footer>
 
