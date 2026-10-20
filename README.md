@@ -25,7 +25,7 @@ Static demo site for Grand Cosmetic Clinic (Studio City, CA), built as a concept
   - Treatment name, short description, real price (pulled from the Grand Menu), and a "Book Now" button linking to the real Square booking page
   - A "What to Expect" section with a short description of the procedure
   - A 3-photo "Some of Our Work" gallery (also blank placeholders for now)
-  - A closing booking band with "Book Now" and "WhatsApp Us" buttons
+  - A closing booking band with "Book Now" and "Call Us" buttons
 
   **Note:** all new photo placeholders on these 6 pages are intentionally left blank (striped/dashed boxes) as requested, so it's obvious where real photos need to go. To add a photo, just save the image into the `assets/` folder and ask to have it wired into the matching placeholder — no need to touch the HTML/CSS yourself.
 
@@ -37,6 +37,9 @@ Static demo site for Grand Cosmetic Clinic (Studio City, CA), built as a concept
 - Treatment pages rebuilt in the new design (no "Photo pending" blocks).
 - Accessibility: darker gold for text contrast (WCAG AA), skip link, visible focus, aria on menu, reduced-motion support.
 - Policies page = the clinic's own text from grandcosmeticclinic.com/policies/, copied word for word (no text of ours added). Note: it mentions website contact forms/Formspree and a Contact-page SMS consent, which this site does not have.
+
+## Booking flow
+All "Book" buttons go to `book.html`, which shows the clinic's SMS consent text (same wording as grandcosmeticclinic.com/book-now/) with an **unticked** checkbox that must be ticked before the "Book Appointment" button continues to the Square booking page. Note: the checkbox only gates the button; it does not store a record of consent (neither does the original page as far as we can see).
 
 ## Set up as a brand-new repository (recommended if you got lost mixing folders before)
 
@@ -62,4 +65,4 @@ This zip is a **complete, ready-to-go project** — it already includes its own 
 - **Texto de "Welcome to Grand Cosmetic Clinic"**: es un texto inventado (marcado en la propia web como "Placeholder copy"). Hay que sustituirlo por la historia real de la clínica.
 - **Formulario**: eliminado. Hay botones de llamar y escribir por email, así que no se recogen datos en la web.
 - **Pop-up de email (15% descuento)**: eliminado a petición del cliente.
-- **WhatsApp**: se asume que el número (818) 200-7769 tiene WhatsApp activo — confirmar con la clínica.
+- **WhatsApp**: la clínica no usa WhatsApp; se eliminó el botón y se sustituyó por "Call Us".

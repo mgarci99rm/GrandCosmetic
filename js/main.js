@@ -48,3 +48,19 @@ if (navToggle && navLinks) {
     });
   });
 }
+
+// Book page: SMS consent checkbox must be ticked (it starts unticked) before continuing to Square
+const bookConsent = document.getElementById('bookConsent');
+const bookBtn = document.getElementById('bookBtn');
+const bookMsg = document.getElementById('bookMsg');
+if (bookConsent && bookBtn) {
+  const sync = () => {
+    bookBtn.setAttribute('aria-disabled', bookConsent.checked ? 'false' : 'true');
+    if (bookConsent.checked && bookMsg) bookMsg.hidden = true;
+  };
+  sync();
+  bookConsent.addEventListener('change', sync);
+  bookBtn.addEventListener('click', (e) => {
+    if (!bookConsent.checked) { e.preventDefault(); if (bookMsg) bookMsg.hidden = false; }
+  });
+}

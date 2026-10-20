@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book Your Appointment | Grand Cosmetic Clinic</title>
+<meta name="description" content="Book your appointment at Grand Cosmetic Clinic in Studio City, CA.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="assets/logo.png">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to main content</a>
+
+<!-- ===== HEADER ===== -->
+<header class="site-header" id="top">
+  <div class="header-inner">
+    <a href="index.html" class="brand">
+      <img src="assets/logo.png" alt="Grand Cosmetic Clinic — home" class="brand-logo">
+    </a>
+    <nav class="main-nav" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#treatments">Treatments</a>
+      <a href="index.html#contact" class="nav-contact">Contact Us</a>
+    </nav>
+    <a href="book.html" class="btn btn-gold header-cta">Book a Consult</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false" aria-controls="navLinks">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+<section class="section section-dark book-section">
+  <div class="container book-inner">
+    <a href="index.html" class="back-link back-link-light">&larr; Back to Home</a>
+    <h1 class="section-title">Book Your Appointment Today</h1>
+    <p class="lede">Elevate your beauty experience at Grand Cosmetic Clinic. Reserve your spot online and enjoy personalized treatments in a luxurious, professional setting.</p>
+
+    <div class="consent-box">
+      <h2>SMS Consent (Booking-Related Messages):</h2>
+      <p>By booking an appointment, you agree to receive text messages from Grand Cosmetic Clinic. These messages may include:</p>
+      <ul>
+        <li>Appointment confirmations</li>
+        <li>Appointment reminders</li>
+        <li>Post-visit instructions</li>
+        <li>Billing notifications</li>
+        <li>Follow-ups</li>
+        <li>Promotional offers (if opted-in)</li>
+      </ul>
+      <p>All messages are strictly related to services provided by Grand Cosmetic Clinic. We do not send unrelated content or third-party offers.</p>
+      <p>You must be 18 years of age or older to consent to receive SMS communications.</p>
+      <p>Message frequency may vary depending on your interaction with us. Message and data rates may apply.<br>Reply <strong>STOP</strong> at any time to unsubscribe. Reply <strong>HELP</strong> for assistance.</p>
+    </div>
+
+    <label class="consent-check" for="bookConsent">
+      <input type="checkbox" id="bookConsent">
+      <span>By checking this box, I confirm that I am 18 years of age or older, that I agree to receive SMS messages from Grand Cosmetic Clinic (including appointment confirmations, reminders, post-visit instructions, billing updates, follow-ups, and promotional offers), and that I have read and agree to the <a href="policies.html#privacy">Privacy Policy and Terms &amp; Conditions</a>.<br><br>Message frequency may vary. Message and data rates may apply.</span>
+    </label>
+
+    <p id="bookMsg" class="book-msg" role="alert" hidden>Please check the box above to continue to booking.</p>
+    <a href="https://grand-cosmetic-clinic.square.site/" id="bookBtn" class="btn btn-gold" target="_blank" rel="noopener">Book Appointment</a>
+
+    <p class="book-alt">Prefer not to receive text messages?<br>
+      Call us directly at <a href="tel:+18182007769">(818) 200-7769</a><br>
+      Email us at <a href="mailto:info@grandcosmeticclinic.com">info@grandcosmeticclinic.com</a></p>
+  </div>
+</section>
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <img src="assets/logo.png" alt="" class="footer-logo" width="56" height="56">
+    <p>&copy; 2026 Grand Cosmetic Clinic. All rights reserved. 11239 Ventura Blvd, Ste 212 Unit 2, Studio City, CA 91604.</p>
+    <nav class="footer-links" aria-label="Legal">
+      <a href="index.html" class="footer-policy-link">&larr; Back to Home</a>
+      <a href="#privacy" class="footer-policy-link">Privacy Policy</a>
+      <a href="#terms" class="footer-policy-link">Terms &amp; Conditions</a>
+      <a href="#sms-privacy" class="footer-policy-link">SMS Terms</a>
+    </nav>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
