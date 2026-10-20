@@ -1,6 +1,6 @@
 /* ===== Design tokens ===== */
 :root{
-  --black:#0F0D0A;
+  --black:#000000;
   --black-soft:#1C1712;
   --cream:#FBF8F2;
   --cream-dim:#F3E8D2;
@@ -91,8 +91,7 @@ html.js-reveal .reveal{
 /* ===== Header (always dark, flush with the dark hero below it) ===== */
 .site-header{
   position:sticky;top:0;z-index:50;
-  background:rgba(15,13,10,.92);
-  backdrop-filter:blur(6px);
+  background:#000000;
 }
 .header-inner{
   max-width:1180px;margin:0 auto;padding:0 24px;
@@ -182,16 +181,14 @@ html.js-reveal .reveal{
 @media(min-width:860px){.hero-dark .hero-text{padding:3rem 2.5vw 3rem 6vw;}}
 
 .hero-badge{
-  width:72px;height:72px;
+  width:112px;height:112px;
   border-radius:50%;
-  background:var(--black-soft);
-  border:1px solid var(--line-dark);
-  display:flex;align-items:center;justify-content:center;
-  padding:10px;
+  overflow:hidden;
+  background:#000000;
+  border:2px solid var(--gold);
   margin-bottom:1.5rem;
-  box-shadow:0 8px 20px -10px rgba(0,0,0,.6);
 }
-.hero-badge img{width:100%;height:100%;object-fit:contain;display:block;}
+.hero-badge img{width:100%;height:100%;object-fit:cover;display:block;transform:scale(1.02);}
 .hero-dark .kicker{color:var(--gold-light);}
 .hero-dark .hero-text h1{color:var(--cream);}
 .hero-dark .hero-text h1 em{color:var(--gold-light);}
@@ -446,7 +443,7 @@ html.js-reveal .reveal{
 }
 .instagram-row a:hover{color:var(--gold);border-color:var(--gold);}
 .about-photo-wrap{border:1px solid var(--line-dark);padding:10px;}
-.about-photo{width:100%;aspect-ratio:4/5;object-fit:cover;}
+.about-photo{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:100% center;display:block;}
 
 /* Team */
 .team-grid{display:grid;grid-template-columns:1fr;gap:1.8rem;}
@@ -673,3 +670,9 @@ img.treatment-hero-photo{width:100%;aspect-ratio:21/9;object-fit:cover;object-po
 .book-msg{color:#ffb4a8;font-size:.9rem;margin-bottom:1rem;}
 .book-alt{margin-top:2rem;font-size:.85rem;color:var(--cream-dim);line-height:1.8;}
 #bookBtn[aria-disabled="true"]{opacity:.55;cursor:not-allowed;}
+
+/* Treatment pages: gallery + instagram */
+.work-figure{max-width:560px;margin:0;}
+.work-figure img{width:100%;height:auto;display:block;border:1px solid var(--line-dark);}
+.work-figure figcaption{font-size:.82rem;color:var(--text-soft);margin-top:.7rem;}
+.work-ig p{color:var(--text-soft);max-width:60ch;margin-bottom:1.2rem;}
