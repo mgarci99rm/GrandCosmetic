@@ -36,7 +36,7 @@ Static demo site for Grand Cosmetic Clinic (Studio City, CA), built as a concept
 - Removed the earlier invented testimonials, the "placeholder copy" note, the "concept site" footer and the Unsplash hotlink.
 - Treatment pages rebuilt in the new design (no "Photo pending" blocks).
 - Accessibility: darker gold for text contrast (WCAG AA), skip link, visible focus, aria on menu, reduced-motion support.
-- Policies page: effective date, California privacy rights and website notice added (drafted here — have the clinic's lawyer review).
+- Policies page = the clinic's own text from grandcosmeticclinic.com/policies/, copied word for word (no text of ours added). Note: it mentions website contact forms/Formspree and a Contact-page SMS consent, which this site does not have.
 
 ## Set up as a brand-new repository (recommended if you got lost mixing folders before)
 
