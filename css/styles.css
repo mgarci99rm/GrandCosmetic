@@ -682,3 +682,12 @@ img.treatment-hero-photo{width:100%;aspect-ratio:21/9;object-fit:cover;object-po
 .work-figure img{width:100%;height:auto;display:block;border:1px solid var(--line-dark);}
 .work-figure figcaption{font-size:.82rem;color:var(--text-soft);margin-top:.7rem;}
 .work-ig p{color:var(--text-soft);max-width:60ch;margin-bottom:1.2rem;}
+
+/* Mobile: stack booking-band buttons neatly */
+@media(max-width:600px){
+  .booking-inner .hero-actions{flex-direction:column;align-items:stretch;max-width:280px;margin-left:auto;margin-right:auto;}
+  .booking-inner .hero-actions .btn{text-align:center;justify-content:center;}
+}
+
+/* Mobile: logo already in header, hide hero badge to avoid duplicate */
+@media(max-width:700px){.hero-badge{display:none;}}
