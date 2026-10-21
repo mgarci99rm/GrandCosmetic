@@ -497,8 +497,9 @@ html.js-reveal .reveal{
 .booking-inner .hero-actions{justify-content:center;}
 
 /* Inquiry (contact buttons) */
-.inquiry-inner{max-width:600px;}
-.contact-actions{margin-top:1.4rem;}
+.inquiry-inner{max-width:640px;text-align:center;}
+.inquiry-inner .section-sub{margin-left:auto;margin-right:auto;}
+.contact-actions{margin-top:1.4rem;justify-content:center;}
 
 /* Reviews */
 .review-list{display:grid;gap:1.6rem;max-width:760px;}
