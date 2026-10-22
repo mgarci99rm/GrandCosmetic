@@ -691,3 +691,21 @@ img.treatment-hero-photo{width:100%;aspect-ratio:21/9;object-fit:cover;object-po
 
 /* Mobile: logo already in header, hide hero badge to avoid duplicate */
 @media(max-width:700px){.hero-badge{display:none;}}
+
+
+/* ===== Detail pages (long-form treatment copy) ===== */
+.detail-body{max-width:780px;}
+.detail-body h2{font-family:var(--font-display);font-weight:500;font-size:clamp(1.3rem,2.6vw,1.6rem);margin:2.4rem 0 .9rem;}
+.detail-body h2:first-child{margin-top:0;}
+.detail-body p,.detail-body li{color:var(--text-soft);line-height:1.8;font-size:1rem;}
+.detail-body p{margin-bottom:1rem;max-width:70ch;}
+.detail-body ul{margin:0 0 1.2rem 1.2rem;max-width:70ch;}
+.detail-body li{margin-bottom:.35rem;}
+.faq-list{margin:.4rem 0 1rem;max-width:70ch;}
+.faq-list details{border-bottom:1px solid var(--line);padding:.9rem 0;}
+.faq-list summary{cursor:pointer;font-weight:500;color:var(--text);list-style:none;display:flex;justify-content:space-between;gap:1rem;}
+.faq-list summary::-webkit-details-marker{display:none;}
+.faq-list summary::after{content:"+";color:var(--gold-deep);font-size:1.2rem;line-height:1;}
+.faq-list details[open] summary::after{content:"\2013";}
+.faq-list details p{margin:.8rem 0 0;}
+.promo-note{font-family:var(--font-mono);font-size:.78rem;color:var(--text-soft);margin:-.8rem 0 1.6rem;}
