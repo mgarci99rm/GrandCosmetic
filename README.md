@@ -66,3 +66,5 @@ This zip is a **complete, ready-to-go project** — it already includes its own 
 - **Formulario**: eliminado. Hay botones de llamar y escribir por email, así que no se recogen datos en la web.
 - **Pop-up de email (15% descuento)**: eliminado a petición del cliente.
 - **WhatsApp**: la clínica no usa WhatsApp; se eliminó el botón y se sustituyó por "Call Us".
+
+_Last updated: 2026-10-21 (final pre-launch version)._
